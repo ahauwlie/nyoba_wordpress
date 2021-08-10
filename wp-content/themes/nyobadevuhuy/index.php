@@ -29,23 +29,23 @@
                   <div class="row align-items-center">
 
                     <div class="col-sm col-6">
-                      <img src="<?= get_theme_file_uri('/assets/img/logo-1.svg') ?>" class="img-fluid" alt="">
+                      <img src="<?php echo get_theme_mod('logo1') ?>" class="img-fluid" alt="">
                     </div>
 
                     <div class="col-sm col-6">
-                      <img src="<?= get_theme_file_uri('/assets/img/logo-2.svg') ?>" class="img-fluid" alt="">
+                      <img src="<?php echo get_theme_mod('logo2') ?>" class="img-fluid" alt="">
                     </div>
 
                     <div class="col-sm col-6">
-                      <img src="<?= get_theme_file_uri('/assets/img/logo-3.svg') ?>" class="img-fluid" alt="">
+                      <img src="<?php echo get_theme_mod('logo3') ?>" class="img-fluid" alt="">
                     </div>
                     <!-- <div class="w-100"></div> -->
                     <div class="col-sm col-6">
-                      <img src="<?= get_theme_file_uri('/assets/img/logo-5.svg') ?>" class="img-fluid" alt="">
+                      <img src="<?php echo get_theme_mod('logo4') ?>" class="img-fluid" alt="">
                     </div>
 
                     <div class="col-sm col-6">
-                      <img src="<?= get_theme_file_uri('/assets/img/logo-7.svg') ?>" class="img-fluid" alt="">
+                      <img src="<?php echo get_theme_mod('logo5') ?>" class="img-fluid" alt="">
                     </div>
 
                   </div>
@@ -60,7 +60,7 @@
                   </span>
                   <a href="#portfolio" class="btn-get-started-v-three scrollto"><?php echo get_theme_mod('butbot_home') ?></a>
                   <img
-                    src="<?php echo get_theme_mod('gambar1') ?>"
+                    src="<?php echo get_theme_mod('profile_pic') ?>"
                     alt="">
                 </div>
               </div>
@@ -299,20 +299,17 @@
           <div class="row">
             <div class="col-lg-3 offset-lg-2  col-md-8 offset-md-2  d-flex align-content-center flex-wrap">
               <div class="section-title">
-                <h6 class="text-left">Skills</h6>
-                <h2 class="text-left">Creative Works</h2>
-                <p class="text-left">Necessitatibus eius consequatur ex aliquid fuga eum quidem, It doesn’t matter how
-                  great your product or service
-                  is if your copy does not captivate your audience.
-                </p>
-                <p class="text-left"> <a href="#" class="btn-get-started-solid">Download Resume <i
+                <h6 class="text-left"><?php echo get_theme_mod('sub_hal5') ?></h6>
+                <h2 class="text-left"><?php echo get_theme_mod('title_hal5') ?></h2>
+                <p class="text-left"><?php echo get_theme_mod('des_hal5') ?></p>
+                <p class="text-left"> <a href="<?php echo get_theme_mod('customizer_setting_pdf') ?>" download class="btn-get-started-solid">Download Resume <i
                       class="ri-download-line"></i></a></p>
               </div>
             </div>
             <div class="col-lg-4 offset-lg-1 col-md-9 offset-md-2 align-items-center">
-              <div class="progress-bar" data-percentage="85%">
+              <div class="progress-bar" data-percentage="<?php echo get_theme_mod('k1R_hal5') ?>">
                 <h4 class="progress-title-holder">
-                  <span class="progress-title">Angular</span>
+                  <span class="progress-title"><?php echo get_theme_mod('sub1R_hal5') ?></span>
                   <span class="progress-number-wrapper">
                     <span class="progress-number-mark">
                       <span class="percent"></span>
@@ -324,9 +321,9 @@
                   <div class="progress-content"></div>
                 </div>
               </div>
-              <div class="progress-bar" data-percentage="90%">
+              <div class="progress-bar" data-percentage="<?php echo get_theme_mod('k2R_hal5') ?>">
                 <h4 class="progress-title-holder">
-                  <span class="progress-title">React</span>
+                  <span class="progress-title"><?php echo get_theme_mod('sub2R_hal5') ?></span>
                   <span class="progress-number-wrapper">
                     <span class="progress-number-mark">
                       <span class="percent"></span>
@@ -338,9 +335,9 @@
                   <div class="progress-content"></div>
                 </div>
               </div>
-              <div class="progress-bar" data-percentage="70%">
+              <div class="progress-bar" data-percentage="<?php echo get_theme_mod('k3R_hal5') ?>">
                 <h4 class="progress-title-holder">
-                  <span class="progress-title">Node Js</span>
+                  <span class="progress-title"><?php echo get_theme_mod('sub3R_hal5') ?></span>
                   <span class="progress-number-wrapper">
                     <span class="progress-number-mark">
                       <span class="percent"></span>
@@ -352,9 +349,9 @@
                   <div class="progress-content"></div>
                 </div>
               </div>
-              <div class="progress-bar" data-percentage="89%">
+              <div class="progress-bar" data-percentage="<?php echo get_theme_mod('k4R_hal5') ?>">
                 <h4 class="progress-title-holder">
-                  <span class="progress-title">Analytics</span>
+                  <span class="progress-title"><?php echo get_theme_mod('sub4R_hal5') ?></span>
                   <span class="progress-number-wrapper">
                     <span class="progress-number-mark">
                       <span class="percent"></span>
@@ -366,9 +363,9 @@
                   <div class="progress-content"></div>
                 </div>
               </div>
-              <div class="progress-bar" data-percentage="86%">
+              <div class="progress-bar" data-percentage="<?php echo get_theme_mod('k5R_hal5') ?>">
                 <h4 class="progress-title-holder">
-                  <span class="progress-title">Management</span>
+                  <span class="progress-title"><?php echo get_theme_mod('sub5R_hal5') ?></span>
                   <span class="progress-number-wrapper">
                     <span class="progress-number-mark">
                       <span class="percent"></span>
@@ -487,7 +484,7 @@
     <div class="section pp-scrollable" id="section8">
       <!-- ======= Contact Section ======= -->
       <section data-anchor="contact" id="contact" class="contact contact-v-three"
-        style="background-image: url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80');">
+        style="background-image: url('<?php echo get_theme_mod('background_pic') ?>');">
         <div class="container-fluid">
           <div class="row justify-content-between">
             <div class="col-lg-4 offset-lg-2 col-md-8 offset-md-2">

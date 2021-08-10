@@ -132,13 +132,13 @@ function home1_customize($wp_customize){
 		'settings' => 'butbot_home',
 		'type' => 'text'
 	)));
+	//INI BUAT FOTO
 	$wp_customize->add_setting('profile_pic', array(
         'default-image' => get_template_directory_uri() . 'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80',
         'transport'     => 'refresh',
         'height'        => 905,
         'width'        => 603,
     ));
-    //INI BUAT FOTO
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'profile_pic_control', array(
         'label' => __('Profile Picture (603wx905h)', 'themeRemax'),
         'section' => 'home_setting_2',
@@ -353,7 +353,7 @@ function halaman2($wp_customize){
 }
 add_action('customize_register', 'halaman2');
 
-//HALAMAN3
+//HALAMAN3imagebelom
 function halaman3($wp_customize){
 	$wp_customize->add_section('home_halaman3', array(
 		'title' => 'Halaman 3 Edit'
@@ -546,6 +546,144 @@ function halaman4($wp_customize){
 }
 add_action('customize_register', 'halaman4');
 
+//HALAMAN5
+function halaman5($wp_customize){
+	$wp_customize->add_section('home_halaman5', array(
+		'title' => 'Halaman 5 Edit'
+	));
+	$wp_customize->add_setting('sub_hal5', array(
+		'default' => 'SKILLS'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'sub_hal5_control', array(
+		'label' => 'SubTitle',
+		'section' => 'home_halaman5',
+		'settings' => 'sub_hal5',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('title_hal5', array(
+		'default' => 'Creative Works'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'title_hal5_control', array(
+		'label' => 'Title',
+		'section' => 'home_halaman5',
+		'settings' => 'title_hal5',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('des_hal5', array(
+		'default' => 'Necessitatibus eius consequatur ex aliquid fuga eum quidem, It doesn’t matter how great your product or service is if your copy does not captivate your audience.'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'des_hal5_control', array(
+		'label' => 'Description',
+		'section' => 'home_halaman5',
+		'settings' => 'des_hal5',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('customizer_setting_pdf', array(
+        'transport'         => 'refresh'
+    ));
+    $wp_customize->add_control( new WP_Customize_Upload_Control( $wp_customize, 'pdf_section_control', array(
+        'label'             => __('PDF Upload', 'name-theme'),
+        'section'           => 'home_halaman5',
+        'settings'          => 'customizer_setting_pdf',    
+    )));
+	//skill_lisa
+	$wp_customize->add_setting('sub1R_hal5', array(
+		'default' => 'Angular'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'sub1R_hal5_control', array(
+		'label' => 'Subtitle Sebalah Kanan(1)',
+		'section' => 'home_halaman5',
+		'settings' => 'sub1R_hal5',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('k1R_hal5', array(
+		'default' => '85%'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'k1R_hal5_control', array(
+		'label' => 'Persenan(1)',
+		'section' => 'home_halaman5',
+		'settings' => 'k1R_hal5',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('sub2R_hal5', array(
+		'default' => 'React'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'sub2R_hal5_control', array(
+		'label' => 'Subtitle Sebalah Kanan(2)',
+		'section' => 'home_halaman5',
+		'settings' => 'sub2R_hal5',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('k2R_hal5', array(
+		'default' => '90%'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'k2R_hal5_control', array(
+		'label' => 'Persenan(2)',
+		'section' => 'home_halaman5',
+		'settings' => 'k2R_hal5',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('sub3R_hal5', array(
+		'default' => 'NodeJS'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'sub3R_hal5_control', array(
+		'label' => 'Subtitle Sebalah Kanan(3)',
+		'section' => 'home_halaman5',
+		'settings' => 'sub3R_hal5',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('k3R_hal5', array(
+		'default' => '70%'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'k3R_hal5_control', array(
+		'label' => 'Persenan(3)',
+		'section' => 'home_halaman5',
+		'settings' => 'k3R_hal5',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('sub4R_hal5', array(
+		'default' => 'Analytics'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'sub4R_hal5_control', array(
+		'label' => 'Subtitle Sebalah Kanan(4)',
+		'section' => 'home_halaman5',
+		'settings' => 'sub4R_hal5',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('k4R_hal5', array(
+		'default' => '89%'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'k4R_hal5_control', array(
+		'label' => 'Persenan(4)',
+		'section' => 'home_halaman5',
+		'settings' => 'k4R_hal5',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('sub5R_hal5', array(
+		'default' => 'Management'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'sub5R_hal5_control', array(
+		'label' => 'Subtitle Sebalah Kanan(5)',
+		'section' => 'home_halaman5',
+		'settings' => 'sub5R_hal5',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('k5R_hal5', array(
+		'default' => '86%'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'k5R_hal5_control', array(
+		'label' => 'Persenan(5)',
+		'section' => 'home_halaman5',
+		'settings' => 'k5R_hal5',
+		'type' => 'text'
+	)));
+}
+add_action('customize_register', 'halaman5');
+
+//halaman6udah make post
+
+//halaman7 belum
+
 //HALAMAN TERAKHIR
 function halaman_end($wp_customize){
 	$wp_customize->add_section('home_halaman_end', array(
@@ -623,6 +761,18 @@ function halaman_end($wp_customize){
 		'settings' => 'telp_end',
 		'type' => 'text'
 	)));
+	//background_foto
+	$wp_customize->add_setting('background_pic', array(
+        'default-image' => get_template_directory_uri() . 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80',
+        'transport'     => 'refresh',
+        'height'        => 483,
+        'width'        => 725,
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'background_pic_control', array(
+        'label' => __('Profile Background (725wx483h)', 'themeRemax'),
+        'section' => 'home_halaman_end',
+        'settings' => 'background_pic',
+    )));
 }
 add_action('customize_register', 'halaman_end');
 
