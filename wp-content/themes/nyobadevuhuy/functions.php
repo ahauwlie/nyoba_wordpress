@@ -353,45 +353,146 @@ function halaman2($wp_customize){
 }
 add_action('customize_register', 'halaman2');
 
-//HALAMAN3imagebelom
+//HALAMAN3
 function halaman3($wp_customize){
 	$wp_customize->add_section('home_halaman3', array(
 		'title' => 'Halaman 3 Edit'
 	));
-	$wp_customize->add_setting('ORP', array(
+	$wp_customize->add_setting('ORP_1', array(
 		'default' => 'Our Recent'
 	));
-	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'ORP_control', array(
-		'label' => 'Title',
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'ORP_1_control', array(
+		'label' => 'Title_1',
 		'section' => 'home_halaman3',
-		'settings' => 'ORP',
+		'settings' => 'ORP_1',
 		'type' => 'text'
 	)));
-	$wp_customize->add_setting('ORP2', array(
+	$wp_customize->add_setting('ORP2_1', array(
 		'default' => 'Project'
 	));
-	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'ORP2_control', array(
-		'label' => 'Title bawah',
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'ORP2_1_control', array(
+		'label' => 'Title bawah_1',
 		'section' => 'home_halaman3',
-		'settings' => 'ORP2',
+		'settings' => 'ORP2_1',
 		'type' => 'text'
 	)));
-	$wp_customize->add_setting('subtitle3', array(
+	$wp_customize->add_setting('subtitle3_1', array(
 		'default' => 'PORTFOLIO'
 	));
-	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'subtitle3_control', array(
-		'label' => 'SubTitle',
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'subtitle3_1_control', array(
+		'label' => 'SubTitle_1',
 		'section' => 'home_halaman3',
-		'settings' => 'subtitle3',
+		'settings' => 'subtitle3_1',
 		'type' => 'text'
 	)));
-	$wp_customize->add_setting('descr', array(
+	$wp_customize->add_setting('descr_1', array(
 		'default' => 'It doesn’t matter how great your product or service is if your copy does not captivate your audience'
 	));
-	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'descr_control', array(
-		'label' => 'Description',
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'descr_1_control', array(
+		'label' => 'Description_1',
 		'section' => 'home_halaman3',
-		'settings' => 'descr',
+		'settings' => 'descr_1',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('utube_1', array(
+		'default' => 'https://www.youtube.com/embed/x6dFP32C0jc'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'utube_1_control', array(
+		'label' => 'Youtube link_1',
+		'section' => 'home_halaman3',
+		'settings' => 'utube_1',
+		'type' => 'text'
+	)));
+
+	$wp_customize->add_setting('ORP_2', array(
+		'default' => 'Kartize'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'ORP_2_control', array(
+		'label' => 'Title_2',
+		'section' => 'home_halaman3',
+		'settings' => 'ORP_2',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('ORP2_2', array(
+		'default' => 'Jena'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'ORP2_2_control', array(
+		'label' => 'Title bawah_2',
+		'section' => 'home_halaman3',
+		'settings' => 'ORP2_2',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('subtitle3_2', array(
+		'default' => 'PORTFOLIO'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'subtitle3_2_control', array(
+		'label' => 'SubTitle_2',
+		'section' => 'home_halaman3',
+		'settings' => 'subtitle3_2',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('descr_2', array(
+		'default' => 'It doesn’t matter how great your product or service is if your copy does not captivate your audience'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'descr_2_control', array(
+		'label' => 'Description_2',
+		'section' => 'home_halaman3',
+		'settings' => 'descr_2',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('utube_2', array(
+		'default' => 'https://www.youtube.com/embed/7A_ovYw6pYk'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'utube_2_control', array(
+		'label' => 'Youtube link_2',
+		'section' => 'home_halaman3',
+		'settings' => 'utube_2',
+		'type' => 'text'
+	)));
+
+	$wp_customize->add_setting('ORP_3', array(
+		'default' => 'Ryan'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'ORP_3_control', array(
+		'label' => 'Title_3',
+		'section' => 'home_halaman3',
+		'settings' => 'ORP_3',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('ORP2_3', array(
+		'default' => 'Reynold'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'ORP2_3_control', array(
+		'label' => 'Title bawah_3',
+		'section' => 'home_halaman3',
+		'settings' => 'ORP2_3',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('subtitle3_3', array(
+		'default' => 'PORTFOLIO'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'subtitle3_3_control', array(
+		'label' => 'SubTitle_3',
+		'section' => 'home_halaman3',
+		'settings' => 'subtitle3_3',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('descr_3', array(
+		'default' => 'It doesn’t matter how great your product or service is if your copy does not captivate your audience'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'descr_3_control', array(
+		'label' => 'Description_3',
+		'section' => 'home_halaman3',
+		'settings' => 'descr_3',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('utube_3', array(
+		'default' => 'https://www.youtube.com/embed/F8sN7ijzozU'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'utube_3_control', array(
+		'label' => 'Youtube link_3',
+		'section' => 'home_halaman3',
+		'settings' => 'utube_3',
 		'type' => 'text'
 	)));
 }

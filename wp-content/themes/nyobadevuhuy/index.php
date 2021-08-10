@@ -147,8 +147,8 @@
       </section><!-- End My Services Section -->
 
     </div>
-    <div class="section pp-scrollable" id="section3">
-      <!-- ======= Portfolio Section ======= -->
+
+    <!-- <div class="section pp-scrollable" id="section3">
       <section id="portfolio" class="d-flex align-items-center experience portfolio portfolio-v-three">
         <div class="container-fluid p-0">
           <div class="row d-flex align-items-center ">
@@ -156,14 +156,10 @@
               <div class="section-title">
                 <h6 class="text-left"><?php echo get_theme_mod('subtitle3') ?></h6>
                 <h2 class="text-left"><?php echo get_theme_mod('ORP') ?><br> <?php echo get_theme_mod('ORP2') ?></h2>
-
                 <p class="text-left"><?php echo get_theme_mod('descr') ?></p>
               </div>
-
             </div>
             <div class="col-lg-7">
-
-
               <div id="gallery-geeknius">
                 <div class="portfolio-info filter-app">
                   <a data-gall="portfolioGallery" class="venobox vbox-item" title="App 1"
@@ -214,25 +210,78 @@
                       src="https://images.unsplash.com/photo-1416339684178-3a239570f315?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80" />
                   </a>
                 </div>
-
-
-                <!-- other images... -->
-
               </div>
-
-
             </div>
-
-
-
           </div>
-
         </div>
+      </section>
+    </div> -->
+    <div class="section pp-scrollable" id="section3">
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="d-flex align-items-center testimonials testimonials-v-three section-bg">
+          <div class="container-fluid p-0">
+            <div class="owl-carousel testimonials-carousel-fade">
+              <div class="testimonial-wrap p-0">
+                <div class="testimonial-item row p-0 justify-content-between">
+                  <div class="col-md-4 offset-md-2 col-lg-4 offset-lg-2 d-flex align-items-center">
+                    <div class="text-testimonial">
+                      <h4><?php echo get_theme_mod('subtitle3_1') ?></h4>
+                      <h3 class="text-left"><?php echo get_theme_mod('ORP_1') ?><br> <?php echo get_theme_mod('ORP2_1') ?></h3>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        <?php echo get_theme_mod('descr_1') ?>
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-5 align-self-end p-0">
+                    <iframe width="635" height="953" src="<?php echo get_theme_mod('utube_1') ?>" frameborder="0" allowfullscreen class="testimonial-img"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-wrap">
+                <div class="testimonial-item row p-0 justify-content-between">
+                  <div class="col-md-4 offset-md-2 col-lg-4 offset-lg-2 d-flex align-items-center">
+                    <div class="text-testimonial">
+                       <h4><?php echo get_theme_mod('subtitle3_2') ?></h4>
+                      <h3 class="text-left"><?php echo get_theme_mod('ORP_2') ?><br> <?php echo get_theme_mod('ORP2_2') ?></h3>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        <?php echo get_theme_mod('descr_2') ?>
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-5 align-self-end p-0">
+                    <iframe width="635" height="953" src="<?php echo get_theme_mod('utube_2') ?>" frameborder="0" allowfullscreen class="testimonial-img"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-wrap">
+                <div class="testimonial-item row p-0 justify-content-between">
+                  <div class="col-md-4 offset-md-2 col-lg-4 offset-lg-2 d-flex align-items-center">
+                    <div class="text-testimonial">
+                       <h4><?php echo get_theme_mod('subtitle3_3') ?></h4>
+                      <h3 class="text-left"><?php echo get_theme_mod('ORP_3') ?><br> <?php echo get_theme_mod('ORP2_3') ?></h3>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        <?php echo get_theme_mod('descr_3') ?>
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-5 align-self-end p-0">
+                    <iframe width="635" height="953" src="<?php echo get_theme_mod('utube_3') ?>" frameborder="0" allowfullscreen class="testimonial-img"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Testimonials Section -->
+      </div>
 
 
-      </section><!-- End Portfolio Section -->
-
-    </div>
     <div class="section pp-scrollable" id="section4">
       <!-- ======= Experience Section ======= -->
       <section id="experience" class="d-flex align-items-center experience experience-v-three">
