@@ -484,20 +484,34 @@
             <h2 class="text-left">Get news feed <small>See all</small></h2>
           </div>
           <div class="row justify-content-center">
+
+            <?php
+                $slider = new WP_Query(array(
+                  'post_type' => 'article',
+                  'posts_per_page' => -1
+                ));
+
+                if($slider->have_posts()) :
+                  while($slider->have_posts( )) : $slider->the_post();
+            ?>
             <div class="col-sm-12 col-md-12 col-lg-4 col-md-4 col-12">
               <div class="card"
-                style='background-image: url("https://images.unsplash.com/photo-1502014822147-1aedfb0676e0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=675&amp;q=80");'
+                style='background-image: url("<?php the_field('pic_art') ?>");'
                 data-aos="fade-up" data-aos-delay="100">
               </div>
               <div class="card-body-second">
-                <h6 class="card-text">26 May 2020 / Design</h6>
-                <h5 class="card-title"><a href="#">Necessitatibus consequatur ex aliquid fuga eum quidem.</a></h5>
+                <h6 class="card-text"><?php the_field('date_art') ?> / <?php the_field('category_art') ?></h6>
+                <h5 class="card-title"><a href="#"><?php the_title(); ?></a></h5>
 
                 <div class="read-more"><a href="#"> Read more</a></div>
               </div>
-
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-4 col-md-4 col-12">
+            <?php
+                endwhile;
+              endif;
+              wp_reset_postdata( );
+            ?>
+            <!-- <div class="col-sm-12 col-md-12 col-lg-4 col-md-4 col-12">
               <div class="card"
                 style='background-image: url("https://images.unsplash.com/photo-1505515888495-c1897b0b5740?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80");'
                 data-aos="fade-up" data-aos-delay="100">
@@ -521,7 +535,7 @@
 
                 <div class="read-more"><a href="#">Read more</a></div>
               </div>
-            </div>
+            </div> -->
           </div>
 
         </div>
