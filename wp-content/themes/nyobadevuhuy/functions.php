@@ -926,3 +926,86 @@ register_nav_menus(
 		'top-menu' => __('Nyoba Menu', 'theme'),
 	)
 );
+
+//Navbar_Artikel
+function nabarart_customize($wp_customize){
+	$wp_customize->add_section('navbarart', array(
+		'title' => 'Navbar_Artikel'
+	));
+	$wp_customize->add_setting('notelp_nav', array(
+		'default' => '+62 895 1405 5817'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'notelp_nav_control', array(
+		'label' => 'Nomer Telp',
+		'section' => 'navbarart',
+		'settings' => 'notelp_nav',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('email_nav', array(
+		'default' => 'ahauwlie@gmail.com'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'email_nav_control', array(
+		'label' => 'Email',
+		'section' => 'navbarart',
+		'settings' => 'email_nav',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('twitter_nav', array(
+		'default' => 'kalo punya'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'twitter_nav_control', array(
+		'label' => 'Akun Twitter',
+		'section' => 'navbarart',
+		'settings' => 'twitter_nav',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('facebook_nav', array(
+		'default' => 'kalo punya'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'facebook_nav_control', array(
+		'label' => 'Akun Facebook',
+		'section' => 'navbarart',
+		'settings' => 'facebook_nav',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('instagram_nav', array(
+		'default' => 'kalo punya'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'instagram_nav_control', array(
+		'label' => 'Akun Instagram',
+		'section' => 'navbarart',
+		'settings' => 'instagram_nav',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('youtube_nav', array(
+		'default' => 'kalo punya'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'youtube_nav_control', array(
+		'label' => 'Akun Youtube',
+		'section' => 'navbarart',
+		'settings' => 'youtube_nav',
+		'type' => 'text'
+	)));
+	$wp_customize->add_setting('linkedin_nav', array(
+		'default' => 'kalo punya'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'linkedin_nav_control', array(
+		'label' => 'Akun Linkedin',
+		'section' => 'navbarart',
+		'settings' => 'linkedin_nav',
+		'type' => 'text'
+	)));
+
+	//sedikit profile
+	$wp_customize->add_setting('hey_nav', array(
+		'default' => '<h1><strong>Hey!</strong> I am Naeem Khan,<br> I am a  <span id="js-rotating" class="type-color">blogger, <em>journalist</em></span> <span>& writer</span></h1>'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'hey_nav_control', array(
+		'label' => 'Animated Text',
+		'section' => 'navbarart',
+		'description' => __( 'tag jangan di hapus yaa' ),
+		'settings' => 'hey_nav',
+		'type' => 'textarea'
+	)));
+}
+add_action('customize_register', 'nabarart_customize');
