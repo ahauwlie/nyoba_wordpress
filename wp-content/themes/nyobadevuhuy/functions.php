@@ -1053,5 +1053,17 @@ function nabarart_customize($wp_customize){
         'section' => 'navbarart',
         'settings' => 'ig4_nav',
     )));
+
+    //section1
+    $wp_customize->add_setting('welcome_nav', array(
+		'default' => '<h2>Hello - <span>Welcome to Myself</span> WordPress Bloge Theme</h2><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has </p>'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'welcome_nav_control', array(
+		'label' => 'Welcome Text',
+		'section' => 'navbarart',
+		'description' => __( 'tag jangan di hapus yaa' ),
+		'settings' => 'welcome_nav',
+		'type' => 'textarea'
+	)));
 }
 add_action('customize_register', 'nabarart_customize');

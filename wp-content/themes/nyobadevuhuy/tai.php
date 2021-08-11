@@ -92,7 +92,6 @@
                             <!-- Start Atribute Navigation -->
                             <div class="attr-nav">
                                 <ul>
-                                    <li><a href="javascript:void(0)" id="search-button"><i class="ti-search"></i></a></li>
                                     <li class="side-menu"><a href="javascript:void(0)"><i class="ti-menu-alt"></i></a></li>
                                 </ul>
                             </div>
@@ -293,8 +292,9 @@
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2">
                             <div class="assurance_title">
-                                <h2>Hello - <span>Welcome to Myself</span> WordPress Bloge Theme</h2>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has </p>
+                                <!-- <h2>Hello - <span>Welcome to Myself</span> WordPress Bloge Theme</h2>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has </p> -->
+                                <?php echo get_theme_mod('welcome_nav') ?>
                             </div>
                         </div>
                     </div>
