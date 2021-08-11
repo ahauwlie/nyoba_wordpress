@@ -481,7 +481,7 @@
         <div class="container">
           <div class="section-title">
             <h6 class="text-left">News</h6>
-            <h2 class="text-left">Get news feed <small><a href="http://nyoba_wordpress.test/wp-content/themes/nyobadevuhuy/index-2.php">See all</a></small></h2>
+            <h2 class="text-left">Get news feed <small><a href="#">See all</a></small></h2>
           </div>
           <div class="row justify-content-center">
 
@@ -501,9 +501,8 @@
               </div>
               <div class="card-body-second">
                 <h6 class="card-text"><?php the_field('date_art') ?> / <?php the_field('category_art') ?></h6>
-                <h5 class="card-title"><a href="#"><?php the_title(); ?></a></h5>
-
-                <div class="read-more"><a href="#"> Read more</a></div>
+                <h5 class="card-title"><a href="/laman-contoh"><?php the_title(); ?></a></h5>
+                <div class="read-more"><a href="/article"> Read more</a></div>
               </div>
             </div>
             <?php

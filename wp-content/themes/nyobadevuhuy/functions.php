@@ -3,7 +3,9 @@
 function nyoba_style(){
 	//font
 	wp_register_style('font', get_template_directory_uri() . 'https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i', array(), 1, 'all');
+	wp_enqueue_style('font');
 	wp_register_style('font2', get_template_directory_uri() . 'https://fonts.googleapis.com/css2?family=Hind:wght@400;700&amp;family=Manrope:wght@200;300;400;600;700;800&amp;display=swap', array(), 1, 'all');
+	wp_enqueue_style('font2');
 	//style
 	wp_enqueue_style('bootstrap', get_theme_file_uri('/assets/vendor/bootstrap/css/bootstrap.min.css'));
 	wp_enqueue_style('icofont', get_theme_file_uri('/assets/vendor/icofont/icofont.min.css'));
@@ -915,3 +917,12 @@ function lisa_art_type(){
 	));
 }
 add_action('init', 'lisa_art_type');
+
+
+add_theme_support('menus');
+
+register_nav_menus(
+	array(
+		'top-menu' => __('Nyoba Menu', 'theme'),
+	)
+);
