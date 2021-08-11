@@ -55,7 +55,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-3 col-sm-4">
-                                    <div class="avatar" style="background-image: url('<?= get_theme_file_uri('/blog/assets/images/author.png') ?>')"></div>
+                                    <div class="avatar" style="background-image: url('<?php echo get_theme_mod('pp_nav') ?>')"></div>
                                 </div>
                                 <div class="col-lg-7 col-sm-8">
                                     <div class="author-content">
@@ -96,71 +96,14 @@
                                     <li class="side-menu"><a href="javascript:void(0)"><i class="ti-menu-alt"></i></a></li>
                                 </ul>
                             </div>
-                            <!-- End Atribute Navigation -->
-                            <!-- Start Header Navigation -->
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                                    <i class="fa fa-bars"></i>
-                                </button>
-                                <a class="navbar-brand" href="index-2.html">
-                                    <img src="<?= get_theme_file_uri('/blog/assets/images/logo.png') ?>" class="logo logo-dark" alt="">
-                                    <img src="<?= get_theme_file_uri('/blog/assets/images/logo-white.png') ?>" class="logo logo-white" alt="">
-                                </a>
-                            </div>
-                            <!-- End Header Navigation -->
-                            <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="navbar-menu">
                                 <ul class="nav navbar-nav navbar-left" data-in="" data-out="">
                                     <li class="dropdown active">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Home</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="dropdown active">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Standard layout</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="home_standard%3dno_sidebar.html">Full width version</a></li>
-                                                    <li class="active"><a href="index-2.html">Sidebar version</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Grid layout</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="home_grid%3d3_column.html">3 Column</a></li>
-                                                    <li><a href="home_grid_2%3dwith_sidebar.html">2 Column with sidebar</a></li>
-                                                    <li><a href="home_grid%3dwith_sidebar.html">Sidebar version</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="home_list_2%3dwith_sidebar.html">1st full + Grid</a></li>
-                                            <li><a href="home_list%3dwith_sidebar.html">1st full + List</a></li>
-                                        </ul>
+                                        <a href="/laman-contoh">Home</a>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Features</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Post type</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="post_standard.html">Standard post</a></li>
-                                                    <li><a href="post_full_width.html">Full width post</a></li>
-                                                    <li><a href="post_image.html">Image post</a></li>
-                                                    <li><a href="post_video.html">Video post</a></li>
-                                                    <li><a href="post_audio.html">Audio post</a></li>
-                                                    <li><a href="post_slidere.html">Slider post</a></li>
-                                                    <li><a href="post_gallery.html">Gallery post</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="about.html">About us</a></li>
-                                            <li><a href="contact.htmll">Contact us</a></li>
-                                            <li><a href="resume.html">Resume</a></li>
-                                            <li><a href="resume.html">Portfolio</a></li>
-                                            <li><a href="404.html">404 page</a></li>
-                                            <li><a href="search.html">Search page</a></li>
-                                            <li><a href="typography.html">Typography</a></li>
-                                            <li><a href="shortcodes.html">Shortcodes</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="/#page2">About Me</a></li>
+                                    <li><a href="/#page5">Portfolio</a></li>
+                                    <li><a href="/#page8">Contact Me</a></li>
                                 </ul>
                             </div><!-- /.navbar-collapse -->
                         </div>   
@@ -172,48 +115,19 @@
                                     <h3>Custom Pagest</h3>
                                 </div>
                                 <ul class="link">
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="resume.html">Services</a></li>
-                                    <li><a href="shortcodes.html">Shortcodes</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="/#page2">About</a></li>
+                                    <li><a href="/#page5">Portfolio</a></li>
+                                    <li><a href="/#page8">Contact</a></li>
                                 </ul>
                             </div>
                             <div class="instagram_widget">
                                 <div class="widget_title"><h3>Instagrams</h3></div>
                                 <ul class="insta_thumb">
-                                    <li><a href="#" class="insta_effect"><img src="<?= get_theme_file_uri('/blog/assets/images/instagram-1.jpg') ?>" alt=""></a></li>
-                                    <li><a href="#" class="insta_effect"><img src="<?= get_theme_file_uri('/blog/assets/images/instagram-2.jpg') ?>" alt=""></a></li>
-                                    <li><a href="#" class="insta_effect"><img src="<?= get_theme_file_uri('/blog/assets/images/instagram-3.jpg') ?>" alt=""></a></li>
-                                    <li><a href="#" class="insta_effect"><img src="<?= get_theme_file_uri('/blog/assets/images/instagram-4.jpg') ?>" alt=""></a></li>
+                                    <li><a href="#" class="insta_effect"><img src="<?php echo get_theme_mod('ig1_nav') ?>" alt=""></a></li>
+                                    <li><a href="#" class="insta_effect"><img src="<?php echo get_theme_mod('ig2_nav') ?>" alt=""></a></li>
+                                    <li><a href="#" class="insta_effect"><img src="<?php echo get_theme_mod('ig3_nav') ?>" alt=""></a></li>
+                                    <li><a href="#" class="insta_effect"><img src="<?php echo get_theme_mod('ig4_nav') ?>" alt=""></a></li>
                                 </ul>
-                            </div>
-                            <!-- /. instagram widget -->
-                            <div class="popular-post">
-                                <div class="widget_title">
-                                    <h3>Popular Post</h3>
-                                </div>
-                                <div class="p-post">
-                                    <h4><a href="#">It is a long established fact that a reader will be distracted by  </a></h4>
-                                    <ul class="authar-info">
-                                        <li class="date"><a href="#"><i class="ti-comment"></i>189 Comment</a></li>
-                                        <li class="like"><a href="#"><i class="ti-user"></i>By Naeem</a></li>
-                                    </ul>
-                                </div>
-                                <div class="p-post">
-                                    <h4><a href="#">It is a long established fact that a reader will be distracted by  </a></h4>
-                                    <ul class="authar-info">
-                                        <li class="date"><a href="#"><i class="ti-comment"></i>189 Comment</a></li>
-                                        <li class="like"><a href="#"><i class="ti-user"></i>By Naeem</a></li>
-                                    </ul>
-                                </div>
-                                <div class="p-post">
-                                    <h4><a href="#">It is a long established fact that a reader will be distracted by  </a></h4>
-                                    <ul class="authar-info">
-                                        <li class="date"><a href="#"><i class="ti-comment"></i>189 Comment</a></li>
-                                        <li class="like"><a href="#"><i class="ti-user"></i>By Naeem</a></li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                         <!-- /.Side Menu -->

@@ -1007,5 +1007,51 @@ function nabarart_customize($wp_customize){
 		'settings' => 'hey_nav',
 		'type' => 'textarea'
 	)));
+	$wp_customize->add_setting('pp_nav', array(
+        'default-image' => get_template_directory_uri() . 'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80',
+        'transport'     => 'refresh',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'pp_nav_control', array(
+        'label' => __('Profile Picture', 'themeRemax'),
+        'section' => 'navbarart',
+        'settings' => 'pp_nav',
+    )));
+    //instagram sidebar
+    $wp_customize->add_setting('ig1_nav', array(
+        'default-image' => get_template_directory_uri() . 'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80',
+        'transport'     => 'refresh',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ig1_nav_control', array(
+        'label' => __('Instagram 1', 'themeRemax'),
+        'section' => 'navbarart',
+        'settings' => 'ig1_nav',
+    )));
+    $wp_customize->add_setting('ig2_nav', array(
+        'default-image' => get_template_directory_uri() . 'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80',
+        'transport'     => 'refresh',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ig2_nav_control', array(
+        'label' => __('Instagram 2', 'themeRemax'),
+        'section' => 'navbarart',
+        'settings' => 'ig2_nav',
+    )));
+    $wp_customize->add_setting('ig3_nav', array(
+        'default-image' => get_template_directory_uri() . 'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80',
+        'transport'     => 'refresh',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ig3_nav_control', array(
+        'label' => __('Instagram 3', 'themeRemax'),
+        'section' => 'navbarart',
+        'settings' => 'ig3_nav',
+    )));
+    $wp_customize->add_setting('ig4_nav', array(
+        'default-image' => get_template_directory_uri() . 'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80',
+        'transport'     => 'refresh',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ig4_nav_control', array(
+        'label' => __('Instagram 4', 'themeRemax'),
+        'section' => 'navbarart',
+        'settings' => 'ig4_nav',
+    )));
 }
 add_action('customize_register', 'nabarart_customize');
