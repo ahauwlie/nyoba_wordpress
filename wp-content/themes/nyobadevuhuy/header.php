@@ -13,11 +13,11 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&amp;family=Manrope:wght@200;300;400;600;700;800&amp;display=swap"
-    rel="stylesheet">
+    rel="stylesheet"> -->
 
   <!-- Vendor CSS Files -->
   <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

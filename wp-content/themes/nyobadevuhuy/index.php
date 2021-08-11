@@ -481,7 +481,7 @@
         <div class="container">
           <div class="section-title">
             <h6 class="text-left">News</h6>
-            <h2 class="text-left">Get news feed <small>See all</small></h2>
+            <h2 class="text-left">Get news feed <small><a href="http://nyoba_wordpress.test/wp-content/themes/nyobadevuhuy/index-2.php">See all</a></small></h2>
           </div>
           <div class="row justify-content-center">
 
