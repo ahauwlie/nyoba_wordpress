@@ -487,7 +487,7 @@
 
             <?php
                 $slider = new WP_Query(array(
-                  'post_type' => 'article',
+                  'post_type' => 'post',
                   'posts_per_page' => -1
                 ));
 
@@ -501,7 +501,7 @@
               </div>
               <div class="card-body-second">
                 <h6 class="card-text"><?php the_field('date_art') ?> / <?php the_field('category_art') ?></h6>
-                <h5 class="card-title"><a href="/laman-contoh"><?php the_title(); ?></a></h5>
+                <h5 class="card-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
                 <div class="read-more"><a href="/article"> Read more</a></div>
               </div>
             </div>

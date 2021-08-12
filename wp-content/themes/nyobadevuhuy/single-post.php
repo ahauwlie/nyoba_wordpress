@@ -7,13 +7,15 @@
                         <main class="col-sm-8 content">
 
                             <?php
-                                $slider = new WP_Query(array(
-                                  'post_type' => 'post',
-                                  'posts_per_page' => -1
-                                ));
+                                $post = get_post($title); //assuming $id has been initialized
+                                setup_postdata($post);
+                                // $slider = new WP_Query(array(
+                                //   'post_type' => 'post',
+                                //   'posts_per_page' => 1
+                                // ));
 
-                                if($slider->have_posts()) :
-                                  while($slider->have_posts( )) : $slider->the_post();
+                                // if($slider->have_posts()) :
+                                //   while($slider->have_posts( )) : $slider->the_post();
                             ?>
                             <div class="post_details_inner">
                                 <div class="post_details_block details_block2">
@@ -43,8 +45,8 @@
                                 </div>
                             </div>
                             <?php
-                                endwhile;
-                              endif;
+                              //   endwhile;
+                              // endif;
                               wp_reset_postdata( );
                             ?>
 
