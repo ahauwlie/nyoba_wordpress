@@ -1,5 +1,5 @@
 <?php 
-/* Template Name: Article */
+/* Template Name: Article1 */
 get_header(); 
 ?>
 
